@@ -28,6 +28,9 @@ class Vec2D:
 def len2(v):
     return v.x*v.x + v.y*v.y;
 
+def distance(v1, v2):
+    return math.sqrt(len2(v1 - v2))
+
 # true if point is outside of the circle
 def outside(v1, v2, r):
     return math.sqrt(len2(v1 - v2)) > r;    
